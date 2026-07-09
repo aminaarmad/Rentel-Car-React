@@ -267,8 +267,6 @@ return (
   </div>
 
 </div>
-
-
 <div className="price-calculator">
   <div className="calculator-row">
     <label>Rental Days:</label>
@@ -307,8 +305,6 @@ return (
           </div>
         </div>
       )}
-   
-
     </section> 
   ); 
 }

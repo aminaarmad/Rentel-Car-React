@@ -446,7 +446,8 @@ nav ul li a:hover{
   min-height: 480px;
   
 }
-/*.modal-img-container {
+
+.modal-img-container {
   flex: 1.1;
   width: 50%; 
   min-height: 480px;
@@ -455,32 +456,14 @@ nav ul li a:hover{
   justify-content: center;
   overflow: hidden;
   position: relative;
+  background-color: #f0f0f0; 
 }
-
 .modal-car-img {
   width: 100%;
   height: 100%;
   object-fit: cover; 
-  object-position: center;
-}*/
-.modal-img-container {
-  flex: 1.1;
-  width: 50%; 
-  min-height: 480px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; /* هذا ضروري جداً لإخفاء أي جزء زائد من الصورة */
-  position: relative;
-  background-color: #f0f0f0; /* إضافة لون خلفية رمادي فاتح لتفادي الفراغات البيضاء المزعجة */
-}
-
-.modal-car-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* هذا يضمن قص الصورة باحترافية لتملأ الإطار دون أن يتغير شكل السيارة */
-  object-position: center; /* يضمن أن التركيز دائماً يكون في وسط الصورة[cite: 1] */
-  display: block; /* يمنع وجود مساحات إضافية تحت الصورة */
+  object-position: center; 
+  display: block;
 }
 .modal-details {
   flex: 1;
@@ -929,7 +912,6 @@ nav ul li a:hover{
   padding-top: 15px;
 }
 
-
 .review-avatar {
   width: 50px;
   height: 50px;
@@ -966,11 +948,11 @@ nav ul li a:hover{
   width: 25px;
   border-radius: 4px;
 }
-/* ================= LUXURY MINIMAL FOOTER ================= */
+
 .luxury-footer {
   width: 100%;
-  background-color: #050505; /* أسود مـلـكـي عـمـيـق */
-  border-top: 1px solid #151515; /* خط خـفـيـف جـداً لـفـصـل نـظـيـف */
+  background-color: #050505; 
+  border-top: 1px solid #151515; 
   padding: 60px 0 20px 0;
   box-sizing: border-box;
 }
@@ -978,16 +960,15 @@ nav ul li a:hover{
 .footer-mini-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px !important; /* مـسـافـة الأمان تـع الـحواف كـيما بـاقـي الـسـيـت */
+  padding: 0 40px !important; 
   display: flex;
-  justify-content: space-between; /* يـبـاعـد الجـهـتـيـن ديركـت على الأطـراف */
+  justify-content: space-between; 
   align-items: center;
-  flex-wrap: wrap; /* باش يـلـقـى راحـتـه في الـتـلـيـفـون ويهبط وحـده */
+  flex-wrap: wrap; 
   gap: 30px;
   box-sizing: border-box;
 }
 
-/* الجـهـة الـيـسـرى: الـلوغو */
 .footer-left-brand h2 {
   font-family: 'Syne', sans-serif;
   color: #ffffff;
@@ -998,18 +979,17 @@ nav ul li a:hover{
 }
 
 .footer-left-brand h2 span {
-  color: #800020; /* الـ لـمـسـة الـعـنـابـيـة الـسّـاحـرة */
+  color: #800020; 
 }
 
 .footer-left-brand p {
   font-family: 'Inter', sans-serif;
-  color: #666666; /* كـتـيـبـة رمـاديـة هـاديـة مـاتـعـمّـرش الـعـيـن */
+  color: #666666; 
   font-size: 0.85rem;
   margin: 0;
   max-width: 350px;
 }
 
-/* الجـهـة الـيـمـنـى: الإتـصـال الـنّـظـيـف */
 .footer-right-contact {
   display: flex;
   flex-direction: column;
@@ -1024,7 +1004,6 @@ nav ul li a:hover{
 
 .mini-icon {
   font-size: 0.9rem;
-  /*filter: grayscale(100%);*/
   opacity: 0.7;
 }
 
@@ -1037,12 +1016,10 @@ nav ul li a:hover{
   transition: color 0.3s ease;
 }
 
-/* تأثير خـفـيـف كـي تـقـربّـي للـتـلـيـفـون */
 .contact-item-mini:hover p {
   color: #800020;
 }
 
-/* سـطـر الـ حـقـوق الـتّـحـتـانـي كـامـل */
 .footer-copyright-bar {
   max-width: 1200px;
   margin: 40px auto 0 auto;
@@ -1059,7 +1036,7 @@ nav ul li a:hover{
   letter-spacing: 0.5px;
 }
 
-/* Responsive للشاشات الصغار تع التليفون */
+
 @media (max-width: 768px) {
   .footer-mini-container {
     flex-direction: column;
@@ -1076,7 +1053,6 @@ html {
   scroll-behavior: smooth; 
 }
 
-/*  Animations */
 @keyframes modalFadeIn {
   from { opacity: 0; }
   to { opacity: 1; }

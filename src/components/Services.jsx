@@ -7,25 +7,18 @@ function Services() {
     const handleScroll = () => {
       if (!sectionRef.current) return;
 
-      // 1. نجيبوا وين راهو موقع القسم بالنسبة للشاشة
       const rect = sectionRef.current.getBoundingClientRect();
-      
-      // 2. شرط الظهور: إذا دخل القسم في الشاشة (الـ Client هبط ليه)
+ 
       if (rect.top < window.innerHeight && rect.bottom > 0) {
         sectionRef.current.classList.add('animate');
       } else {
-        // 3. شرط الاختفاء: إذا خرج القسم تماماً (الـ Client طلع للفوق أو هبط بزاف للتحت)
         sectionRef.current.classList.remove('animate');
       }
     };
 
-    // نـشـعّـلوا المراقبة مع الـ Scroll ديركت
     window.addEventListener('scroll', handleScroll);
-    
-    // نـشـغّـلوها مرّة في البداية كاشما يكون القسم باين ديركت
     handleScroll();
 
-    // تنظيف المراقبة كي نـخـرجوا من الصفحة
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
