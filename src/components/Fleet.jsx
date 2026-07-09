@@ -124,15 +124,15 @@ function Fleet() {
       `,
       icon: 'success',
       confirmButtonText: 'Great!',
-      confirmButtonColor: '#800020', // لون عنابي متناسق مع السيت تاعكِ!
+      confirmButtonColor: '#800020', 
       background: '#ffffff',
       borderRadius: '16px',
       customClass: {
         popup: 'my-custom-swal'
       }
-    });
+    }); 
 
-    setSelectedCar(null); // يغلق المودال الكبير
+    setSelectedCar(null); 
   };
 
   const categories = ['Sports', 'Luxury', 'Electric', 'SUVs', 'Supercars'];
@@ -224,7 +224,6 @@ return (
 
              <hr className="modal-divider" />
 
-{/* 📋 1️⃣ استمارة معلومات الزبون والتاريخ (اللي كانت ناقصة لداخل) */}
 <div className="booking-form">
   
   <div className="form-group">
@@ -270,7 +269,6 @@ return (
 </div>
 
 
-{/* 🧮 2️⃣ حاسبة الأسعار (كيما راهي عندكِ) */}
 <div className="price-calculator">
   <div className="calculator-row">
     <label>Rental Days:</label>
@@ -295,8 +293,6 @@ return (
   </div>
 </div>
 
-
-{/* 🎯 3️⃣ زر تأكيد الحجز الذكي */}
 <button 
   className="confirm-booking-btn"
   onClick={handleConfirmBooking}
