@@ -744,16 +744,14 @@ nav ul li a:hover{
   background: white;
   border-radius: 2px;
 }
-
-.services-grid {
+.services-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px  ;
-  padding: 0 40px !important; 
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 25px;
+  padding: 0 40px !important;
   box-sizing: border-box !important;
   width: 100%;
 }
-
 .service-card {
   background: #111111;
   padding: 35px 25px;
